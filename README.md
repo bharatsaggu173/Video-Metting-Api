@@ -1,63 +1,61 @@
-# Video Meeting App
+# **🎥 Video Meeting App**  
 
-This is a real-time video meeting application built with **Socket.IO** and **WebRTC**. It allows users to join a virtual room, send messages, and interact through video and audio streams.
+A real-time video meeting application built with **Socket.IO** and **WebRTC**. It allows users to join virtual rooms, send messages, and interact through video and audio streams.  
 
-## Features
+---
 
-- **Video Call**: Real-time video communication between users.
-- **Message Chat**: Send and receive chat messages during the call.
-- **Room Management**: Join and manage rooms with a unique room ID.
-- **Real-Time Notifications**: Users are notified when others join the room.
+## **✨ Features**
+- 📹 **Video Call**: Real-time video communication between users.
+- 💬 **Message Chat**: Send and receive chat messages during the call.
+- 🚪 **Room Management**: Join and manage rooms with a unique Room ID.
+- 🔔 **Real-Time Notifications**: Be notified when other users join the room.
 
-## Tech Stack
+---
 
-- **Frontend**: HTML, CSS, JavaScript (vanilla)
-- **Backend**: Node.js, Express.js, Socket.IO
-- **Real-Time Communication**: WebRTC for video streaming, Socket.IO for messaging
+## **🛠 Tech Stack**
+- 🌐 **Frontend**: HTML, CSS, JavaScript (vanilla).
+- ⚙️ **Backend**: Node.js, Express.js, Socket.IO.
+- 📡 **Real-Time Communication**: WebRTC for video streaming, Socket.IO for messaging.
 
-## Setup Instructions
+---
+
+## **🚀 Setup Instructions**
 
 Follow these steps to set up the project on your local machine:
 
-### Prerequisites
+### **📋 Prerequisites**
+- Install [Node.js](https://nodejs.org/) (Version 14 or higher).
+- Install [npm](https://www.npmjs.com/).
 
-- Install [Node.js](https://nodejs.org/) (Version 14 or higher)
-- Install [npm](https://www.npmjs.com/)
-
-### Installation Steps
-
-1. **Clone the repository**:
+### **📦 Installation Steps**
+1. **Clone the repository**:  
    ```bash
    git clone https://github.com/bharatsaggu173/video-meeting-app.git
    cd video-meeting-app
-Install dependencies:
-
-```bash
+1.**Install dependencies**:
 npm install
-Start the server:```
-
-```bash
+2.**Start the server**:
 npm start
-Open the browser and go to http://localhost:3000.
-```
-**Creating and Joining Rooms**
-```When the application starts, a prompt will ask the user to enter a Room ID. Multiple users can join the same room to communicate via video and chat.```
+3.**Open the browser and go to**:
+http://localhost:3000
 
-**Sending Messages**
-Users can send chat messages that are broadcast to all other users in the room. The chat will be visible to everyone in real-time.
+🚪 Creating and Joining Rooms
+ When the application starts, a prompt will ask the user to enter a Room ID.
+ Multiple users can join the same room to communicate via video and chat.
 
-**Dependencies**
-express: Web framework for Node.js
-socket.io: For real-time communication
-webrtc: For video and audio streaming
-To install dependencies, run:
+💬 Sending Messages
+Users can send chat messages that are broadcast to all other users in the room.
+The chat will be visible to everyone in real time.
 
-```bash
-npm install express socket.io
-Folder Structure
-```
-```bash
+📚 Dependencies
+To install all required dependencies, run:
+npm install
+Key dependencies include:
+a.**express**: Web framework for Node.js.
+b.**socket.io**: For real-time communication.
+c.**webrtc**: For video and audio streaming.
 
+📂 Folder Structure
 video-meeting-app/
 ├── server.js         # Express server setup
 ├── socket.js         # Socket.io signaling logic
@@ -65,17 +63,18 @@ video-meeting-app/
 │   └── stun-turn.js  # STUN/TURN server configuration
 ├── routes/
 │   └── rooms.js      # API routes to manage rooms and users
-└── controllers/
-    └── roomController.js  # Business logic for rooms
+├── controllers/
+│   └── roomController.js  # Business logic for rooms
 ├── index.html        # Main HTML file for the video call interface
 ├── app.js            # WebRTC + Socket.io frontend logic
 ├── styles.css        # Basic styles for the UI
-└── utils/
-    └── webrtc.js     # WebRTC connection logic
-├── public/               # Static files (images, etc.)
-├── package.json          # Node dependencies (Express, Socket.io, etc.)
-└── README.md             # Project documentation```
-**Author**
-```Bharat Saggu
-Email: bharatsaggu6@gmail.com
-GitHub: github.com/bharatsaggu173```
+├── utils/
+│   └── webrtc.js     # WebRTC connection logic
+├── public/           # Static files (images, etc.)
+├── package.json      # Node dependencies (Express, Socket.io, etc.)
+└── README.md         # Project documentation
+
+👨‍💻 Author
+Name: Bharat Saggu
+📧 Email: bharatsaggu6@gmail.com
+🐙 GitHub: github.com/bharatsaggu173
